@@ -2,6 +2,7 @@ module Widgets.ProgressBar (progressBar) where
 
 import Html exposing (..)
 import Html.Attributes as A
+import Color
 
 pbStyle c v =
   A.style
@@ -12,7 +13,7 @@ pbStyle c v =
     ]
 
 activeStyle = pbStyle "blue"
-inactiveStyle = pbStyle "red"
+inactiveStyle = pbStyle "transparent"
 
 
 
